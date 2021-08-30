@@ -1,9 +1,8 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/navbar";
 function App() {
-  return (
-    <h2>WASSUPP</h2>
-  )
+  return <Navbar />;
 }
 
 export default App;
