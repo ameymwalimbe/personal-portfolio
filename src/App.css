@@ -4,6 +4,9 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 /******************* NAVBAR *********************/
+nav {
+  z-index: 2;
+}
 .logo {
   width: 5rem;
   height: 5rem;
@@ -31,8 +34,70 @@ nav ul li {
   max-height: 6rem;
 }
 .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid rgb(99, 99, 233);
+  border-bottom: 0.1875rem solid rgb(99, 99, 233);
 }
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid rgb(99, 99, 233);
+  border-bottom: 0.1875rem solid rgb(99, 99, 233);
+}
+
+/******************* HEADER *********************/
+.header-wrapper {
+  position: relative;
+  background: url(./images/bbg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.main-info h1 {
+  padding-top: 1rem;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+}
+
+/******************* TYPED TEXT *********************/
+
+.typed-text {
+  margin-top: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  color: rgb(103, 156, 255);
+}
+
+/******************* HEADER MAIN OFFER BUTTON *********************/
+.btn-main-offer {
+  border: 1px solid rgb(255, 171, 14);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: white;
+  margin: 2rem;
+}
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: rgb(255, 171, 14);
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+/******************* PARTICLES *********************/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
 }
